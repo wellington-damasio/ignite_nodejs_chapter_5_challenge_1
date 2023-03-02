@@ -1,10 +1,10 @@
-# Ignite Node.js 2021 Challenge #5.1 - Testes Unitários
+# Ignite Node.js 2021 Challenge #5.1 - Unit Testing
 
-## Desafio
-Criar testes unitários para a aplicação já pronta (FinAPI).
+## Challenge
+Create tests for the useCases in this application (FinAPI).
 
-## Testes
-Será criado um teste unitário para cada rota, sendo o teste baseado nas condições adquiridas ao analisar o useCase de cada rota.
+## Tests
+For each route, tests will be created based on the system requirements that can be analysed by checking the useCase of the route
 
 #### POST /api/v1/users (Create user) ✅
 - Should be able to create a new user
