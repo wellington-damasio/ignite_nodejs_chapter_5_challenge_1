@@ -5,13 +5,15 @@ import { CreateUserError } from "./CreateUserError";
 
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 import { ICreateUserDTO } from "./ICreateUserDTO";
+import { UsersRepository } from "../../repositories/UsersRepository";
 
 @injectable()
-export class CreateUserUseCase {
+class CreateUserUseCase {
   constructor(
     @inject('UsersRepository')
-    private usersRepository: IUsersRepository,
-  ) {}
+    private usersRepository: IUsersRepository
+  ) {
+  }
 
   async execute({ name, email, password }: ICreateUserDTO) {
     const userAlreadyExists = await this.usersRepository.findByEmail(email);
@@ -31,3 +33,5 @@ export class CreateUserUseCase {
     return user;
   }
 }
+
+export {CreateUserUseCase}

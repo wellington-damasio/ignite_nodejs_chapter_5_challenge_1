@@ -7,13 +7,15 @@ export class CreateUserController {
   async execute(request: Request, response: Response) {
     const { name, email, password } = request.body;
 
-    const createUser = container.resolve(CreateUserUseCase);
+    const createUserUseCase = container.resolve(CreateUserUseCase)
 
-    await createUser.execute({
+    const user = await createUserUseCase.execute({
       name,
       email,
       password
     });
+
+    console.log(user)
 
     return response.status(201).send();
   }

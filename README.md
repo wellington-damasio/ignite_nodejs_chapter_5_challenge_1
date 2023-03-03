@@ -1,10 +1,10 @@
-# Ignite Node.js 2021 Challenge #5.1 - Unit Testing
+# Ignite Node.js 2021 Challenge #5.1 - Integrated Testing
 
 ## Challenge
-Create tests for the useCases in this application (FinAPI).
+Create tests for the Controllers in this application (FinAPI).
 
 ## Tests
-For each route, tests will be created based on the system requirements that can be analysed by checking the useCase of the route
+For each route, tests will be created based on the system requirements that can be analysed by checking the Controller of the route
 
 #### POST /api/v1/users (Create user) ✅
 - Should be able to create a new user

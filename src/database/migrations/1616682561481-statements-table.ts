@@ -22,13 +22,10 @@ export class accountsTable1616682561481 implements MigrationInterface {
         {
           name: 'amount',
           type: 'decimal',
-          precision: 5,
-          scale: 2,
         },
         {
           name: 'type',
-          type: 'enum',
-          enum: ['deposit', 'withdraw']
+          type: 'varchar',
         },
         {
           name: 'created_at',
